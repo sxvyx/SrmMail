@@ -22,7 +22,7 @@
 
 | Prototype UI |
 |:---:|
-| <img src="assets/Screenshot 2025-12-08 003420.png" width="800"> |
+| <img src="assets/proto_ui.png" width="800"> |
 
 ---
 

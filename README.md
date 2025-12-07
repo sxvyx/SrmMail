@@ -1,74 +1,67 @@
-# A-Data-Structures-Driven-Gmail-Simulation
-The practical application of data structures in the development of a simplified email management system, akin to Gmail. The project was implemented using C++ and aimed to demonstrate the effective utilization of data structures in managing user accounts, messages, and various associated actions.
+# SrmMail (CCC Project 2)
+### A Data Structures Driven Gmail Simulation
 
-Description of my Gmail-like application built in C++ with a focus on the use of data structures:
+**SrmMail** is a comprehensive simulation of an email management system, demonstrating the practical application of Data Structures and Algorithms (DSA).
 
-**User Accounts Management:**
+This project features a **hybrid interface system**:
+1.  **Modern Web UI**: A responsive, Gmail-like graphical interface with sidebar navigation, composed emails, and reading panes.
+2.  **CLI Terminal Mode**: A VS Code-styled command-line interface that mimics the original C++ backend logic.
 
-•	Utilizes a doubly linked list to efficiently manage user accounts.
+---
 
-•	Allows users to create new accounts with unique usernames and passwords.
+## 🚀 Live Demo
+You can view the live prototype here: **[GitHub Pages Link]** *(Enable via Settings > Pages)*
 
-•	Implements a login system for registered users to access their accounts.
+## 📂 Project Structure
+*   **`index.html`**: Main application entry point.
+*   **`js/`**: Contains core simulation logic (`simulation_logic.js`) and UI controllers.
+*   **`css/`**: Styling for both the Web UI and the Terminal theme.
+*   **`src/`**: Contains the original C++ source code (`messager.cpp`).
 
+---
 
+## 🛠 Core Data Structures (Backend Logic)
+The core simulation logic (originally implemented in C++ and ported to JS) uses efficient data structures to manage high-volume email traffic:
 
-**Message Storage:**
+### 1. User Accounts Management
+*   **Doubly Linked List**: Utilized to efficiently manage the list of all user accounts.
+*   **Features**:
+    *   Create new accounts with unique usernames.
+    *   Secure login authentication.
+    *   O(n) traversal for user lookup.
 
-•	Employs two singly linked lists per user, one for storing sent messages and another for received messages.
+### 2. Message Storage
+*   **Singly Linked Lists**: Each user has two personal linked lists:
+    *   `SentBox`: Stores sent messages.
+    *   `Inbox`: Stores received messages.
+*   **Message Node**: Each node contains sender, recipient, content, timestamp, and status flags (starred, read, deleted).
 
-•	Provides a structured data storage system for users to manage their correspondence.
+### 3. Message Retrieval & Search
+*   **Vector (Dynamic Array)**: Used during search operations to store references to messages that match specific criteria (e.g., "From: Saurav").
+*   **Algorithms**: Sequential search algorithms filter messages based on metadata and status.
 
-•	Each message contains information such as sender, recipient, message content, timestamp, and message status (e.g., starred or deleted).
+---
 
+## ✨ Features
+### user Actions
+*   **Authentication**: detailed Login/Signup system.
+*   **Mode Switching**: Toggle seamlessly between "UI Mode" and "Terminal Mode" (Press `9` in CLI or the Toggle Button in UI).
+*   **Persistence**: Session data is preserved when switching modes.
 
+### Message Management
+*   **Compose**: Send emails to other users (sanitized input).
+*   **Inbox/Sent/Trash**: Organized folders for message management.
+*   **Starring**: Mark important messages with a star.
+*   **Deletion**: Move to Trash (soft delete) or permanently delete.
+*   **Search**: Real-time filtering of messages by content or sender.
 
-**User Actions:**
+---
 
-•	Enables logged-in users to perform a variety of actions, including:
+## 🎓 About This Project
+This project was developed as **CCC Project 2** to demonstrate the effective utilization of:
+*   **Graph/Linked List** for User Relationships.
+*   **Queues/Lists** for Message Delivery.
+*   **Frontend-Backend Integration** for seamless UX.
 
-•	Sending messages to other existing users.
-
-•	Logging out from the current account.
-
-•	Creating new accounts or logging into existing ones.
-
-•	Changing the password of an existing account.
-
-•	Deleting an existing account.
-
-
-
-**Message Management:**
-
-•	Users can perform several operations on their messages, such as:
-
-•	Viewing a list of received, sent, deleted, and starred messages.
-
-•	Searching for messages sent to or received from a specific user.
-
-•	Reading the content of messages.
-
-•	Deleting messages.
-
-•	Marking messages as important (starred) or removing the star.
-
-•	Permanently deleting messages from the trash.
-
-•	Viewing messages in the trash.
-
-
-
-**Message Retrieval and Search:**
-
-•	Uses sequential search algorithms to find messages that meet specific criteria, such as sender, recipient, or message status.
-
-•	When a message satisfies the search criteria, its reference is stored in a vector, allowing users to perform actions on these filtered messages efficiently.
-
-This application's use of data structures, including doubly linked lists, singly linked lists, and vectors, ensures efficient storage, retrieval, and manipulation of user accounts and messages. These data structures enable users to have a seamless and organized experience within the email-like application.
-
-![1](https://github.com/sanjana459/A-Data-Structures-Driven-Gmail-Simulation/assets/85347345/5821fabd-4da6-4d14-9864-a714ac73e94a)
-
-![2](https://github.com/sanjana459/A-Data-Structures-Driven-Gmail-Simulation/assets/85347345/8797c6b0-666b-47c5-80e4-27f03f0510fa)
-
-
+---
+*Created by Sanjana*

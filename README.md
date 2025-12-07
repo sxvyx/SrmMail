@@ -72,7 +72,7 @@ Each message is a node in the linked list containing:
 ---
 
 ## 🚀 Live Demo
-You can view the live simulation here: **[GitHub Pages Link]**
+You can view the live simulation here: **https://sxvyx.github.io/SrmMail/**
 
 ## 📂 Project Structure
 *   **`index.html`**: Entry point.

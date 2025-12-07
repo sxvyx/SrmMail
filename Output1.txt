@@ -1,0 +1,270 @@
+----------------------------------------
+******** WELCOME TO MESSAGER **********
+0. Exit application
+1. Create new account
+2. Login to your account
+3. Delete an existing account
+4. Change Password
+Enter your choice: 1
+
+----------------------------------------
+Enter username to create : sanjana
+
+Create password: 1234
+
+Your account has been created successfully!
+----------------------------------------
+******** WELCOME TO MESSAGER **********
+0. Exit application
+1. Create new account
+2. Login to your account
+3. Delete an existing account
+4. Change Password
+Enter your choice: 1
+
+----------------------------------------
+Enter username to create : bhavesh
+
+Create password: 9876
+
+Your account has been created successfully!
+----------------------------------------
+******** WELCOME TO MESSAGER **********
+0. Exit application
+1. Create new account
+2. Login to your account
+3. Delete an existing account
+4. Change Password
+Enter your choice: 2
+
+----------------------------------------
+Enter username: sanjana
+
+Enter password: 1234
+
+Successfully logged in.
+************* HELLO @sanjana ! *************
+0. Logout
+1. Check inbox messages
+2. Send a message
+3. View sent messages
+4. Search messages sent to an user
+5. Search messages received from an user
+6. View deleted messages
+7. View starred messages in Inbox
+8. View starred messages in Sentbox
+Enter your choice: 2
+
+------------------------------------------
+Enter username of user to message : bhavesh
+
+Enter message you want to send to @bhavesh :
+Hello Bhavesh
+
+Message sent successfully to @bhavesh
+************* HELLO @sanjana ! *************
+0. Logout
+1. Check inbox messages
+2. Send a message
+3. View sent messages
+4. Search messages sent to an user
+5. Search messages received from an user
+6. View deleted messages
+7. View starred messages in Inbox
+8. View starred messages in Sentbox
+Enter your choice: 3
+
+------------------------------------------
+
+******************************* SENT *******************************
+-------------------------------------------------------------------------------------------------
+  No.           From             To        Message          When    Status       Starred
+-------------------------------------------------------------------------------------------------
+    1        sanjana        bhavesh       Hello Bh...        Oct 23      read     unstarred
+-------------------------------------------------------------------------------------------------
+********* SENT OPTIONS **********
+0. Exit
+1. Read a message
+2. Delete a message
+3. Star/Unstar a message
+Enter your choice: 1
+
+---------------------------------------------
+Enter message no. to read: 1
+
+..................................................................
+************** MESSAGE 1 **************
+From : sanjana
+To : bhavesh
+When : Mon Oct 23 15:21:05 2023
+
+Message :
+Hello Bhavesh
+...................................................................
+
+******************************* SENT *******************************
+-------------------------------------------------------------------------------------------------
+  No.           From             To        Message          When    Status       Starred
+-------------------------------------------------------------------------------------------------
+    1        sanjana        bhavesh       Hello Bh...        Oct 23      read     unstarred
+-------------------------------------------------------------------------------------------------
+********* SENT OPTIONS **********
+0. Exit
+1. Read a message
+2. Delete a message
+3. Star/Unstar a message
+Enter your choice: 3
+
+---------------------------------------------
+Enter message no. to star/unstar: 1
+Message no. 1 has been starred.
+
+******************************* SENT *******************************
+-------------------------------------------------------------------------------------------------
+  No.           From             To        Message          When    Status       Starred
+-------------------------------------------------------------------------------------------------
+    1        sanjana        bhavesh       Hello Bh...        Oct 23      read       starred
+-------------------------------------------------------------------------------------------------
+********* SENT OPTIONS **********
+0. Exit
+1. Read a message
+2. Delete a message
+3. Star/Unstar a message
+Enter your choice: 0
+
+---------------------------------------------
+************* HELLO @sanjana ! *************
+0. Logout
+1. Check inbox messages
+2. Send a message
+3. View sent messages
+4. Search messages sent to an user
+5. Search messages received from an user
+6. View deleted messages
+7. View starred messages in Inbox
+8. View starred messages in Sentbox
+Enter your choice: 8
+
+------------------------------------------
+
+**************************** STARRED MESSAGES IN SENTBOX  ****************************
+-------------------------------------------------------------------------------------------------
+  No.           From             To        Message          When    Status       Starred
+-------------------------------------------------------------------------------------------------
+    1        sanjana        bhavesh       Hello Bh...        Oct 23      read       starred
+-------------------------------------------------------------------------------------------------
+********* MESSAGE OPTIONS **********
+0. Exit
+1. Read a message
+2. Delete a message
+3. Star/Unstar a message
+Enter your choice: 0
+
+---------------------------------------------
+************* HELLO @sanjana ! *************
+0. Logout
+1. Check inbox messages
+2. Send a message
+3. View sent messages
+4. Search messages sent to an user
+5. Search messages received from an user
+6. View deleted messages
+7. View starred messages in Inbox
+8. View starred messages in Sentbox
+Enter your choice: 0
+
+------------------------------------------
+
+Successfully logged out.
+----------------------------------------
+******** WELCOME TO MESSAGER **********
+0. Exit application
+1. Create new account
+2. Login to your account
+3. Delete an existing account
+4. Change Password
+Enter your choice: 2
+
+----------------------------------------
+Enter username: bhavesh
+
+Enter password: 9876
+
+Successfully logged in.
+************* HELLO @bhavesh ! *************
+0. Logout
+1. Check inbox messages
+2. Send a message
+3. View sent messages
+4. Search messages sent to an user
+5. Search messages received from an user
+6. View deleted messages
+7. View starred messages in Inbox
+8. View starred messages in Sentbox
+Enter your choice: 1
+
+------------------------------------------
+
+******************************* INBOX *******************************
+-------------------------------------------------------------------------------------------------
+  No.           From             To        Message          When    Status       Starred
+-------------------------------------------------------------------------------------------------
+    1        sanjana        bhavesh       Hello Bh...        Oct 23    unread     unstarred
+-------------------------------------------------------------------------------------------------
+********* INBOX OPTIONS **********
+0. Exit
+1. Read a message
+2. Delete a message
+3. Star/Unstar a message
+Enter your choice: 1
+
+---------------------------------------------
+Enter message no. to read: 1
+
+..................................................................
+************** MESSAGE 1 **************
+From : sanjana
+To : bhavesh
+When : Mon Oct 23 15:21:05 2023
+
+Message :
+Hello Bhavesh
+...................................................................
+
+******************************* INBOX *******************************
+-------------------------------------------------------------------------------------------------
+  No.           From             To        Message          When    Status       Starred
+-------------------------------------------------------------------------------------------------
+    1        sanjana        bhavesh       Hello Bh...        Oct 23      read     unstarred
+-------------------------------------------------------------------------------------------------
+********* INBOX OPTIONS **********
+0. Exit
+1. Read a message
+2. Delete a message
+3. Star/Unstar a message
+Enter your choice: 0
+
+---------------------------------------------
+************* HELLO @bhavesh ! *************
+0. Logout
+1. Check inbox messages
+2. Send a message
+3. View sent messages
+4. Search messages sent to an user
+5. Search messages received from an user
+6. View deleted messages
+7. View starred messages in Inbox
+8. View starred messages in Sentbox
+Enter your choice: 0
+
+------------------------------------------
+
+Successfully logged out.
+----------------------------------------
+******** WELCOME TO MESSAGER **********
+0. Exit application
+1. Create new account
+2. Login to your account
+3. Delete an existing account
+4. Change Password
+Enter your choice:

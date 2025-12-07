@@ -15,9 +15,14 @@
 |:---:|:---:|
 | <img src="assets/Screenshot 2025-12-08 000207.png" width="400"> | <img src="assets/Screenshot 2025-12-08 000215.png" width="400"> |
 
+
 | Reading an Email | Sidebar & Navigation |
 |:---:|:---:|
 | <img src="assets/Screenshot 2025-12-08 000223.png" width="400"> | <img src="assets/Screenshot 2025-12-08 000234.png" width="400"> |
+
+| Prototype UI |
+|:---:|
+| <img src="assets/Screenshot 2025-12-08 003420.png" width="800"> |
 
 ---
 

@@ -1,67 +1,78 @@
 # SrmMail (CCC Project 2)
 ### A Data Structures Driven Gmail Simulation
 
-**SrmMail** is a comprehensive simulation of an email management system, demonstrating the practical application of Data Structures and Algorithms (DSA).
-
-This project features a **hybrid interface system**:
-1.  **Modern Web UI**: A responsive, Gmail-like graphical interface with sidebar navigation, composed emails, and reading panes.
-2.  **CLI Terminal Mode**: A VS Code-styled command-line interface that mimics the original C++ backend logic.
+**SrmMail** is a comprehensive simulation of an email management system, demonstrating the practical application of Data Structures and Algorithms (DSA). This project focuses on the efficient use of **Linked Lists** to model a real-world mailing system.
 
 ---
 
-## 🚀 Live Demo
-You can view the live prototype here: **[GitHub Pages Link]** *(Enable via Settings > Pages)*
+## 📸 Screenshots
 
-## 📂 Project Structure
-*   **`index.html`**: Main application entry point.
-*   **`js/`**: Contains core simulation logic (`simulation_logic.js`) and UI controllers.
-*   **`css/`**: Styling for both the Web UI and the Terminal theme.
-*   **`src/`**: Contains the original C++ source code (`messager.cpp`).
+| Login & Authentication | Inbox View |
+|:---:|:---:|
+| <img src="assets/Screenshot 2025-12-08 000029.png" width="400"> | <img src="assets/Screenshot 2025-12-08 000156.png" width="400"> |
+
+| Compose Email | Terminal Mode (CLI) |
+|:---:|:---:|
+| <img src="assets/Screenshot 2025-12-08 000207.png" width="400"> | <img src="assets/Screenshot 2025-12-08 000215.png" width="400"> |
+
+| Reading an Email | Sidebar & Navigation |
+|:---:|:---:|
+| <img src="assets/Screenshot 2025-12-08 000223.png" width="400"> | <img src="assets/Screenshot 2025-12-08 000234.png" width="400"> |
 
 ---
 
-## 🛠 Core Data Structures (Backend Logic)
-The core simulation logic (originally implemented in C++ and ported to JS) uses efficient data structures to manage high-volume email traffic:
+## 🔗 Core Data Structures (Linked List Implementation)
 
-### 1. User Accounts Management
-*   **Doubly Linked List**: Utilized to efficiently manage the list of all user accounts.
-*   **Features**:
-    *   Create new accounts with unique usernames.
-    *   Secure login authentication.
-    *   O(n) traversal for user lookup.
+The backbone of this simulation is the **Linked List**. Unlike standard arrays, our system uses dynamic pointers to manage users and messages efficiently in memory.
 
-### 2. Message Storage
-*   **Singly Linked Lists**: Each user has two personal linked lists:
-    *   `SentBox`: Stores sent messages.
-    *   `Inbox`: Stores received messages.
-*   **Message Node**: Each node contains sender, recipient, content, timestamp, and status flags (starred, read, deleted).
+### 1. User Management (Doubly Linked List)
+We utilize a **Doubly Linked List** to store all registered user accounts.
+*   **Why?** Allows for O(1) addition of new users and efficient O(n) traversal for login verification.
+*   **Structure**: Each `UserNode` contains:
+    *   `username` / `password`
+    *   `*next` pointer (to next user)
+    *   `*prev` pointer (to previous user)
+    *   Pointers to their personal `Inbox` and `SentBox`.
 
-### 3. Message Retrieval & Search
-*   **Vector (Dynamic Array)**: Used during search operations to store references to messages that match specific criteria (e.g., "From: Saurav").
-*   **Algorithms**: Sequential search algorithms filter messages based on metadata and status.
+### 2. Message Storage (Singly Linked Lists)
+Every user has two private **Singly Linked Lists**:
+*   **Inbox List**: Stores all received messages. HEAD points to the most recent email.
+*   **SentBox List**: Stores all sent messages.
+*   **Why?** Singly linked lists are lightweight and perfect for linear message history where we primarily access the head (latest message).
+
+### 3. Message Node Structure
+Each message is a node in the linked list containing:
+*   `sender` (string)
+*   `receiver` (string)
+*   `content` (string)
+*   `date` (string)
+*   `isStarred` (boolean)
+*   `*next` (pointer to the next message)
 
 ---
 
 ## ✨ Features
-### user Actions
-*   **Authentication**: detailed Login/Signup system.
-*   **Mode Switching**: Toggle seamlessly between "UI Mode" and "Terminal Mode" (Press `9` in CLI or the Toggle Button in UI).
-*   **Persistence**: Session data is preserved when switching modes.
+### Hybrid Interface
+*   **Modern Web UI**: A responsive GUI with sidebar navigation, search, and rich text reading.
+*   **Terminal Mode**: A toggleable CLI that gives a "hacker-style" view of the underlying linked list operations.
 
-### Message Management
-*   **Compose**: Send emails to other users (sanitized input).
-*   **Inbox/Sent/Trash**: Organized folders for message management.
-*   **Starring**: Mark important messages with a star.
-*   **Deletion**: Move to Trash (soft delete) or permanently delete.
-*   **Search**: Real-time filtering of messages by content or sender.
-
----
-
-## 🎓 About This Project
-This project was developed as **CCC Project 2** to demonstrate the effective utilization of:
-*   **Graph/Linked List** for User Relationships.
-*   **Queues/Lists** for Message Delivery.
-*   **Frontend-Backend Integration** for seamless UX.
+### Functionality
+*   **Authentication**: Secure Login/Signup using list traversal.
+*   **Compose**: Creates a new Message Node and appends it to:
+    1.  The Sender's `SentBox` Linked List.
+    2.  The Receiver's `Inbox` Linked List.
+*   **Delete**: Removes a node from the Linked List (pointer manipulation).
+*   **Search**: Traverses the Linked List to find nodes matching the query.
 
 ---
-*Created by Sanjana*
+
+## 🚀 Live Demo
+You can view the live simulation here: **[GitHub Pages Link]**
+
+## 📂 Project Structure
+*   **`index.html`**: Entry point.
+*   **`js/simulation_logic.js`**: Contains the JS translation of the C++ Linked List logic.
+*   **`src/messager.cpp`**: The original C++ source code referencing the raw pointers and classes.
+*   **`assets/`**: Images and screenshots.
+
+---

@@ -71,7 +71,10 @@ function toggleMode() {
 }
 
 // Bind Toggle Button (if exists on login screen or header)
-// Note: We might have multiple buttons call this.
+const btnToggle = document.getElementById('btn-toggle-mode');
+if (btnToggle) {
+  btnToggle.addEventListener('click', toggleMode);
+}
 
 // UI LOGIC
 let currentUser = null;
